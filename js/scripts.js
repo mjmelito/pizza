@@ -15,7 +15,11 @@ Pizza.prototype.price = function() {
   } else if (this.size === 'large') {
     sizePrice = 20;
   }
-  return sizePrice;
+
+  let toppingsPrice = this.toppings.length;
+
+  let finalPrice = sizePrice + toppingsPrice;
+  return finalPrice;
 }
 
 
