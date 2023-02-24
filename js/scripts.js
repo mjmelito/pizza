@@ -16,9 +16,23 @@ Pizza.prototype.price = function() {
     sizePrice = 20;
   }
 
-  let toppingsPrice = this.toppings.length;
+  let toppingsPrice;
+  if (Array.isArray(this.toppings)) {
+    toppingsPrice = this.toppings.length;
+  } else {
+    toppingsPrice = 1;
+  }
 
-  let finalPrice = sizePrice + toppingsPrice;
+  let stylePrice
+  if (this.style === 'Chicago') {
+    stylePrice = 3;
+  } else if (this.style === 'New York') {
+    stylePrice = 2;
+  } else if (this.style === "Neapolitan") {
+    stylePrice = 1;
+  }
+  
+  let finalPrice = sizePrice + toppingsPrice + stylePrice;
   return finalPrice;
 }
 
