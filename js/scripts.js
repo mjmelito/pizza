@@ -29,7 +29,7 @@ Pizza.prototype.price = function() {
   } else if (this.style === 'New York') {
     stylePrice = 2;
   } else if (this.style === "Neapolitan") {
-    stylePrice = 1;
+    stylePrice = 0;
   }
   
   let finalPrice = sizePrice + toppingsPrice + stylePrice;
@@ -37,9 +37,31 @@ Pizza.prototype.price = function() {
 }
 
 
-
-
-
-
-
 /*UI Logic*/
+
+const form = document.querySelector('form');
+const pizzaDisplay = document.querySelector('#pizza-display');
+const selectionsDisplay = document.querySelector('#selections-display');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  // Get the selected toppings
+  const toppings = Array.from(form.querySelectorAll('input[name="toppings"]:checked')).map(input => input.value);
+  
+  // Get the selected size and style
+  const size = form.elements['size'].value;
+  const style = form.elements['style'].value;
+  
+  // Create the Pizza object
+  const pizza = new Pizza(toppings, size, style);
+  
+  // Display the Pizza object and selections on the page
+  pizzaDisplay.textContent = `Your pizza costs $${pizza.price()}.`;
+  const selectionsText = `You selected a ${size} ${style} pizza with the following toppings: ${toppings.join(', ')}.`;
+  selectionsDisplay.textContent = selectionsText;
+});
+
+
+
+

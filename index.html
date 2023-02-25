@@ -8,8 +8,100 @@
   <title>Timber & Flame Pizza</title>
 </head>
 <body>
-  <h1>Timber & Flame</h1>
-  <h2>Wood Fired Pizza</h2>
+  <div class="header">
+    <h1>Timber + Flame</h1>
+    <h2>Wood Fired Pizza</h2>
+    <hr>
+  </div>
+  <form id="pizza-form">
+    <h3>Step 1: Select Pizza Size</h3>
+    <label>
+      <input type="radio" name="size" value="small" id="size-small">
+      Small
+    </label>
+    <br>
+    <label>
+      <input type="radio" name="size" value="medium" id="size-medium">
+      Medium
+    </label>
+    <br>
+    <label>
+      <input type="radio" name="size" value="large" id="size-large">
+      Large
+    </label>
+  
+    <h3>Step 2: Select Pizza Style</h3>
+    <label>
+      <input type="radio" name="style" value="Neapolitan" id="style-neapolitan">
+      Neapolitan
+    </label>
+    <br>
+    <label>
+      <input type="radio" name="style" value="New York" id="style-new-york">
+      New York + $2
+    </label>
+    <br>
+    <label>
+      <input type="radio" name="style" value="Chicago" id="style-chicago">
+      Chicago + $3
+    </label>
+    <br>
+    <h3>Step 3: Select Pizza Toppings</h3>
+    <label>
+      <input type="checkbox" name="toppings" value="pepperoni" id="toppings-pepperoni">
+      Pepperoni
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" name="toppings" value="mushrooms" id="toppings-mushrooms">
+      Mushrooms
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" name="toppings" value="sausage" id="toppings-sausage">
+      Sausage
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" name="toppings" value="onions" id="toppings-onions">
+      Onions
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" name="toppings" value="green-pepper" id="toppings-green-pepper">
+      Green Pepper
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" name="toppings" value="fresh-garlic" id="toppings-fresh-garlic">
+      Fresh Garlic
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" name="toppings" value="fresh-basil" id="toppings-fresh-basil">
+      Fresh Basil
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" name="toppings" value="fresh-tomato" id="toppings-fresh-tomato">
+      Fresh Tomato
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" name="toppings" value="pepperoncini" id="toppings-pepperoncini">
+      Pepperoncini
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" name="toppings" value="extra-cheese" id="toppings-extra-cheese">
+      Extra Cheese
+    </label>
+    <br>
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+  <div id="selections-display"></div>
+  <div id="pizza-display"></div>
   
   <script src="js/scripts.js"></script>
 </body>
