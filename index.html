@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <title>Timber & Flame Pizza</title>
 </head>
 <body>
@@ -38,12 +39,12 @@
     <br>
     <label>
       <input type="radio" name="style" value="New York" id="style-new-york">
-      New York + $2
+      New York Style + $2
     </label>
     <br>
     <label>
       <input type="radio" name="style" value="Chicago" id="style-chicago">
-      Chicago + $3
+      Chicago Deep Dish + $3
     </label>
     <br>
     <h3>Step 3: Select Pizza Toppings</h3>
@@ -100,9 +101,10 @@
     <br>
     <button type="submit">Submit</button>
   </form>
-  <div id="selections-display"></div>
-  <div id="pizza-display"></div>
-  
+  <div class="results">
+    <div id="selections-display"></div>
+    <div id="pizza-display"></div>
+  </div>
   <script src="js/scripts.js"></script>
 </body>
 </html>
