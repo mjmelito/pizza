@@ -1,8 +1,36 @@
-Describe: function()
+# Timber + Flame Woodfired Pizza
 
-Test:
-Code:
-Expected Output: 
+#### By Matthew Melito
+
+#### A simple and easy to use order form for a pizza shop.
+
+## Technologies Used
+
+* HTML
+* CSS
+* JavaScript
+
+## Description
+
+This site allows users to select options for a pizza including style, size, and toppings. The resulting price based on the user choices is then displayed to the user along with a summary of their selections.
+
+## Setup/Installation Requirements
+
+* Clone this repository to your desktop.
+* Navigate to the top level of the directory.
+* Open index.html in your browser.
+
+## Known Bugs
+
+None
+
+## License
+
+*This project uses the following license: [MIT](https://opensource.org/licenses/MIT)*
+
+Copyright (c) 2023
+**_Matthew Melito_**
+
 
 Describe: pizza()
 

@@ -5,13 +5,22 @@
 }
 
 .results {
+  width: 50hw;
+
   float: right;
-  margin: 5vh;
+  margin-right: 30%;
+  margin-top: 5%;
   font-size:large;
 }
+
  form {
   float: left;
+  width: 30vw;
+  margin-left: 5%;
+  background-color: blanchedalmond;
+  padding: 2.5%;
  }
+
 #error-message {
   color: red;
 }
