@@ -1,25 +1,46 @@
 .header {
   text-align: center;
+  color: rgb(255, 245, 233);
   margin-left: auto;
   margin-right: auto;
+  margin-top: -15px;
+  padding: .3%;
+  background-color: black;
 }
+
+#backgroundImage {
+  position: fixed;
+  object-fit: cover;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+form {
+  float: left;
+  width: 25vw;
+  margin-left: 5%;
+  margin-top: 1%;
+  background-color:bisque;
+  padding: 2%;
+  border-color: black;
+  border: solid;
+ }
 
 .results {
-  width: 50hw;
-
+  width: 40%;
   float: right;
-  margin-right: 30%;
-  margin-top: 5%;
-  font-size:large;
+  margin-right: 20%;
+  margin-top: 10%;
+  padding: 2.5%;
+  font-size: large;
+  background-color: bisque;
+  border-color: black;
+  border: solid;
 }
 
- form {
-  float: left;
-  width: 30vw;
-  margin-left: 5%;
-  background-color: blanchedalmond;
-  padding: 2.5%;
- }
+
 
 #error-message {
   color: red;
