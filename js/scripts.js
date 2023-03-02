@@ -45,6 +45,8 @@ const selectionsDisplay = document.querySelector('#selections-display');
 
 form.addEventListener('submit', function(event) {
   event.preventDefault();
+  document.getElementById("hidden").removeAttribute("Id");
+
   
   // Get the selected toppings
   const toppings = Array.from(form.querySelectorAll('input[name="toppings"]:checked')).map(input => input.value);
